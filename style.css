@@ -1,0 +1,145 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+.main {
+    flex-direction: column;
+}
+
+.content {
+    max-width: 1560px;
+    padding: 0px;
+    display: flex;
+}
+
+.header {
+
+    background-color: #654321;
+    color: #ffffff;
+    
+}
+.header ul a{
+    color: #ffffff;
+}
+
+.header-content {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.site-link a{
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.site-link:hover{
+    color: darkgrey;
+}
+
+
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: solid 3px #654321;
+}
+
+.data-table th, .data-table td {
+    text-align: left;
+    border: solid 1px #654321;
+}
+
+.data-table th {
+    background-color: #c0c0c0;
+    color: black;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #c0c0c0;
+}
+.nav {
+    color: #ffffff;
+}
+.footer {
+    background-color: #598234;
+    color: #fff;
+    text-align: center;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-content {
+    max-width: 960px;
+
+}
+.calc {
+    border: 1px solid #4e3030;
+    border-radius: 5px;
+}
+@media (min-width:769px) {
+    .main-menu ul {
+        list-style-type: none;
+        display: flex;
+    }
+    .main-menu a {
+        font-size: 20px;
+        color:whitesmoke;
+        text-decoration: none;
+    }
+    
+    .main-menu a:hover{
+        color: darkgrey;
+    }
+    .logo{
+        background-color: #654321;
+    }
+
+    .logo img {
+        display: flex;
+        width:100px;
+    }
+    
+    
+}
+@media (max-width: 768px) {
+
+    .main-menu ul {
+        list-style-type: none;
+        display: flex;
+    }
+    .main-menu a {
+        font-size: 20px;
+        color:whitesmoke;
+        text-decoration: none;
+    }
+
+    .main-menu a:hover{
+        color: darkgrey;
+    }
+    
+    .logo img{
+        width: 50px;
+
+    }
+
+    .content{
+        order:-1;
+    }
+
+    .sslk{
+        order:1;
+    }
+    .calc{
+        order: 0;
+    }
+}
